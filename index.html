@@ -4,53 +4,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Verde Oliva Suplementos</title>
+  <link rel="icon" href="favicon.ico">
   <style>
     /* Estilos Globais */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #ffffff; /* Fundo branco */
+      background-color: #ffffff;
       color: #333;
     }
-
     /* Estilos do Cabeçalho */
     .header {
-      background-color: #000000; /* Preto */
+      background-color: #000000;
       color: #ffffff;
       padding: 20px 0;
       text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
     }
     .header h1 {
       margin: 0;
-      font-size: 2.5em;
-      color: #8A9A5B; /* Verde Oliva */
+      font-size: 5.5em;
+      color: #8A9A5B;
     }
-
+    .header img {
+      width: 90px;
+      height: 90px;
+      margin-right: 20px;
+      border-radius: 50%;
+      background-color: #FFA07A;
+    }
     /* Estilos do Conteúdo */
     .container {
       width: 90%;
       max-width: 1200px;
       margin: 20px auto;
       padding: 20px;
+      background-color: #F7F7F7;
+      border: 1px solid #DDDDDD;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     .product-section {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      /* Adicione os estilos adicionais aqui */
+    }
+    .product-section img {
+      width: 700px;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .link-categoria {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.2s ease;
+      margin-right: 20px;
+    }
+    .link-categoria:hover {
+      color: #8A9A5B;
     }
   </style>
 </head>
 <body>
-  <!-- Adicione o conteúdo aqui -->
-  <header class="header">
+<header class="header">
     <h1>Verde Oliva Suplementos</h1>
+    <img src="logo.png" alt="Logo da loja">
+    <select onchange="window.location.href=this.value">
+      <option value="#">SELECIONE UMA CATEGORIA</option>
+      <option value="#creatina">Creatinas</option>
+      <option value="#pre-treino">Pré Treinos</option>
+      <option value="#whey">Wheys</option>
+      <option value="#hipercalorico">Hipercalóricos</option>
+      <option value="#carbo-gel">Carbo Gel</option>
+      <option value="#colageno">Colágenos</option>
+      <option value="#pasta-amendoim">Pasta de Amendoim</option>
+    </select>
   </header>
   <div class="container">
     <section class="product-section">
-      <!-- Adicione os produtos aqui -->
+      <img src="Fachada.jpg" alt="Produto 1">
+    </section>
+    <section id="creatina">
+      <h2>Creatinas</h2>
+      <p>A creatina é um suplemento popular entre atletas e praticantes de musculação, pois ajuda a aumentar a força e a resistência muscular.</p>
+    </section>
+    <section id="pre-treino">
+      <h2>Pré Treinos</h2>
+      <p>O pré-treino é um suplemento que ajuda a aumentar a energia e a resistência muscular durante os treinos.</p>
+    </section>
+    <section id="whey">
+      <h2>Wheys</h2>
+      <p>A whey é um suplemento popular entre atletas e praticantes de musculação, pois ajuda a aumentar a massa muscular e a reduzir a recuperação muscular.</p>
+    </section>```
+<section id="hipercalorico">
+      <h2>Hipercalóricos</h2>
+      <p>O hipercalórico é um suplemento que ajuda a aumentar a massa muscular e a reduzir a recuperação muscular.</p>
+    </section>
+    <section id="carbo-gel">
+      <h2>Carbo Gel</h2>
+      <p>O carbo gel é um suplemento que ajuda a aumentar a energia e a resistência muscular durante os treinos.</p>
+    </section>
+    <section id="colageno">
+      <h2>Colágenos</h2>
+      <p>O colágeno é um suplemento que ajuda a melhorar a saúde da pele, dos cabelos e das unhas.</p>
+    </section>
+    <section id="pasta-amendoim">
+      <h2>Pasta de Amendoim</h2>
+      <p>A pasta de amendoim é um suplemento que ajuda a aumentar a massa muscular e a reduzir a recuperação muscular.</p>
     </section>
   </div>
 </body>
